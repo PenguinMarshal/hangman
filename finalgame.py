@@ -1,13 +1,28 @@
-import pygame, sys, random
-from pygame.locals import *
+'''
+----------------------How to run the program----------------------------
 
-fps = 30
+--> First: download the project folder
+--> Second: import the folder to an IDE, such as: VSCode, Atom, PyCharm
+--> Requirement: install pygame to your device in order for it to run
+--> Game usage:
+	-> Start running the python code (Group_Project2.py)
+	-> The game will start automatically
+	-> Controls:
+		-> Use keyboard to type letter you guess to input the line.
+
+ -----------------------------------------------------------------------
+'''
+import pygame
+import sys
+import random
+from pygame.locals import * #copys all names in pygame.locals into current namespace.
+
+FPS = 30
 
 pygame.init()
 clock = pygame.time.Clock()
-
-width = 800
-height = 600
+SCREEN = width, height = 800, 600
+# COLORS *********************************************************************
 black = (0,0,0)
 white = (255,255,255)
 grey= (128,128,128)
@@ -15,6 +30,8 @@ darkgrey = (128,128,128)
 lightblue = (126,178,255)
 darklightblue = (42, 129, 255)
 lightgrey = (192, 192, 192)
+
+
 textBoxSpace = 5
 textBoxNumber = 0
 score = 0
