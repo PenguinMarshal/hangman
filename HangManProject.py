@@ -5,6 +5,7 @@ from pygame.locals import *
 # Set the Frames Per Second (FPS) to 30
 fps = 30
 # Initialize Pygame
+pygame.mixer.pre_init(44100,16,2,4096)
 pygame.init()
 # Create a clock object to control the FPS
 clock = pygame.time.Clock()
@@ -62,7 +63,7 @@ def Foods():
     hangmanGame(food,title)
 
 def Sports():
-    sport = ['rugby','football','netball','basketball','swimming','hockey','curling','running','golf','tennis','badmington','archery','volleyball','bowling','dancing','gym','skating','baseball','rounders','boxing','climbing','canoe','cycling','fencing','karate','shooting','cricket']
+    sport = ['rugby','football','netball','basketball','swimming','hockey','curling','running','golf','tennis','badminton','archery','volleyball','bowling','dancing','gym','skating','baseball','rounders','boxing','climbing','canoe','cycling','fencing','karate','shooting','cricket']
     print("sport")
     title = "Sports"
     hangmanGame(sport,title)
@@ -167,6 +168,9 @@ def main():
     global  screen, play
     play = True
     screen = pygame.display.set_mode((width, height))
+    pygame.mixer.music.load("background.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
     pygame.display.set_caption("Welcome to Hangman Game!")
     while True:
         hangman()
