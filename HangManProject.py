@@ -64,7 +64,7 @@ def draw_score():
 # Function to start the hangman game with 'animal' category
 def Animals():
     # Set the list of words for 'animal' category
-    animal = ['cow','dog','cat','pig','zebra','bird','giraffe','lion','tiger','penguin','hamster','fox','panda','bear','cheetah','ostrich','meerkat','whale','shark','horse','monkey','octopus','kitten','kangaroo','chicken','fish','rabbit','sheep']
+    animal = ['cow','dog','cat','pig','zebra','moose','leopard','giraffe','lion','tiger','penguin','hamster','fox','panda','bear','cheetah','ostrich','crocodile','alligator','llama','hedgehog','raccoon','hippo','meerkat','whale','shark','horse','monkey','octopus','kitten','kangaroo','chicken','fish','rabbit','sheep']
     # Print 'animal' to the console (This line seems unnecessary for the game and can be removed)
     print("animal")
     title = "Animals"
@@ -72,19 +72,19 @@ def Animals():
     hangmanGame(animal,title)
 
 def Vehicles():
-    vehicle = ['car','bus','train','airplane','plane','ship','jet','boat','lorry','tractor','bike','motorbike','tram','van','ambulance','fire engine','rocket','taxi','caravan','coach','lorry','scooter','sleigh','tank','wagon','spaceship']
+    vehicle = ['mountain bike','bus','train','airplane','plane','fire truck','pickup truck','dump truck','forklift','tractor','bicycle','motorcycle','helicopter','moped','ambulance','fire engine','rocket','taxi','subway','bulldozer','ambulance','scooter','airship','tank','wagon','spaceship']
     print("vehicle")
     title = "Vehicles"
     hangmanGame(vehicle,title)
 
 def Foods():
-    food = ['apple','banana','orange','peach','pizza','donut','chips','sandwich','cookie','cucumber','carrot','sweetcorn','ice cream','pancake','bread','potato','tomato','nuts','yogurt','pasta','rice','cheese','soup','fish','egg','meat','ham','sausage']
+    food = ['apple','bacon','biscuit','sushi','banana','orange','peach','pizza','doughnut','gyoza','hamburger','hot dog','sandwich','cookie','cucumber','carrot','burrito','ice cream','pancake','bread','potato','tomato','kebab','yogurt','pasta','fried chicken','cheese','porridge','french fries','croissant','oatmeal','popcorn','sausage']
     print("food")
     title = "Foods"
     hangmanGame(food,title)
 
 def Sports():
-    sport = ['rugby','football','netball','basketball','swimming','hockey','curling','running','golf','tennis','badminton','archery','volleyball','bowling','dancing','gym','skating','baseball','rounders','boxing','climbing','canoe','cycling','fencing','karate','shooting','cricket']
+    sport = ['rugby','football','basketball','swimming','hockey','curling','water polo','golf','tennis','badminton','archery','volleyball','bowling','surfing','wrestling','skating','baseball','dodgeball','boxing','rock climbing','figure skating','cycling','fencing','lacrosse','shooting','cricket']
     print("sport")
     title = "Sports"
     hangmanGame(sport,title)
