@@ -1,3 +1,19 @@
+'''
+----------------------How to run the program----------------------------
+
+--> First: download the project folder
+--> Second: import the folder to an IDE, such as: VSCode, Atom, PyCharm
+--> Requirement: install pygame to your device in order for it to run
+--> Game usage:
+	-> Start running the python code (HangManProject.py)
+	-> The game will start automatically
+	-> Controls:
+        -> Use mouse 
+		-> Use keyboard to type letter you guess to input the line.
+
+ -----------------------------------------------------------------------
+'''
+
 # Import the necessary libraries
 import pygame
 import sys
