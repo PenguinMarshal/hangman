@@ -1,9 +1,12 @@
 # Import the necessary libraries
-import pygame, sys, random
-from pygame.locals import *
+import pygame
+import sys
+import random
+from pygame.locals import * #copys all names in pygame.locals into current namespace.
+
 
 # Set the Frames Per Second (FPS) to 30
-fps = 30
+FPS = 30
 # Initialize Pygame
 pygame.mixer.pre_init(44100,16,2,4096)
 pygame.init()
@@ -11,8 +14,7 @@ pygame.init()
 clock = pygame.time.Clock()
 
 # Set the width and height of the game window
-width = 800
-height = 600
+SCREEN = width, height = 800, 600
 
 # Define various colors used in the game
 orange = (255, 165, 0)
